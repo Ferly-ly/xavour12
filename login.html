@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Login Website Kelas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <div class="card" style="max-width:400px; margin:auto; margin-top:80px;">
+        <h3 style="text-align:center;">Login Website Kelas XII.1</h3>
+        <p style="text-align:center; margin-bottom:20px;">
+            Masuk sebagai Admin atau Siswa
+        </p>
+
+        <form id="loginForm">
+            <label>Username</label>
+            <input type="text" id="username" required
+                   style="width:100%; padding:10px; margin:8px 0 15px;">
+
+            <label>Password</label>
+            <input type="password" id="password" required
+                   style="width:100%; padding:10px; margin-bottom:15px;">
+
+            <button type="submit"
+                    style="width:100%; padding:10px; background:#1e3a8a; color:white; border:none; border-radius:8px;">
+                Login
+            </button>
+        </form>
+
+        <p id="error" style="color:red; text-align:center; margin-top:10px;"></p>
+    </div>
+</div>
+
+<script src="login.js"></script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Informasi Umum</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="navbar">
+    <div class="nav-left">
+        <span class="logo">XII.1</span>
+    </div>
+
+    <ul class="nav-menu">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="informasi-umum.html">Informasi Umum</a></li>
+        <li><a href="tugas.html">Informasi Tugas</a></li>
+        <li><a href="#" onclick="logout()">Logout</a></li>
+    </ul>
+</nav>
+
+<h2>Informasi Umum Sekolah</h2>
+
+<!-- FORM ADMIN -->
+<div class="card admin-only">
+    <h3>Tambah Informasi</h3>
+
+    <input type="text" id="judul" placeholder="Judul Informasi">
+    <textarea id="isi" placeholder="Isi Informasi"></textarea>
+    <button onclick="tambahInfo()">Simpan</button>
+</div>
+
+
+<!-- LIST INFORMASI -->
+<div id="info-list"></div>
+
+<script src="informasi-umum.js"></script>
+</body>
+</html>
